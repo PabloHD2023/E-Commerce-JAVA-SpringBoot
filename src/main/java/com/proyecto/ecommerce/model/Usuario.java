@@ -18,7 +18,6 @@ public class Usuario {
     private String nombre;
     private String username;
     private String email;
-    private String direccion;
     private String telefono;
     private String tipo;
     private String password;
@@ -26,12 +25,11 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(Integer idUsuario, String nombre, String username, String email, String direccion, String telefono, String tipo, String password) {
+    public Usuario(Integer idUsuario, String nombre, String username, String email, String telefono, String tipo, String password) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.username = username;
         this.email = email;
-        this.direccion = direccion;
         this.telefono = telefono;
         this.tipo = tipo;
         this.password = password;
@@ -69,14 +67,6 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     public String getTelefono() {
         return telefono;
     }
@@ -103,7 +93,9 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "idUsuario=" + idUsuario + ", nombre=" + nombre + ", username=" + username + ", email=" + email + ", direccion=" + direccion + ", telefono=" + telefono + ", tipo=" + tipo + ", password=" + password + '}';
+        return "Usuario{" + "idUsuario=" + idUsuario + ", nombre=" + nombre + ", username=" + username + ", email=" + email + ", telefono=" + telefono + ", tipo=" + tipo + ", password=" + password + '}';
     }
+
+
     
 }
